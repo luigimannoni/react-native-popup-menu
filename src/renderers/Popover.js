@@ -235,7 +235,6 @@ export default class Popover extends React.Component {
       anchorStyle,
       preferredPlacement,
       placement: userPlacement,
-      ...other
     } = this.props;
     const isRTL = I18nManager.isRTL;
     const animation = {
@@ -265,7 +264,7 @@ export default class Popover extends React.Component {
             anchorStyle,
           ]}
         />
-        <View {...other} style={[styles.options, style]}>
+        <View style={[styles.options, style]}>
           {children}
         </View>
       </Animated.View>
